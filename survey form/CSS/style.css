@@ -1,0 +1,88 @@
+/* CSS RESET*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#title{
+    text-align: center;
+    font-size: 3.8rem; 
+    margin: auto 5px;
+    color:tomato;
+    font-weight: bolder;
+}
+
+#description{
+    text-align: center;
+    margin: auto auto;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+}
+
+#title::before{ 
+    content: "";
+    position: fixed;
+    top:0px;
+    left:0px;
+    background: url("https://cdn.pixabay.com/photo/2016/08/15/10/17/survey-1594962_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;    
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    margin:5px auto;
+    width: 40%;
+}
+
+#survey-form{
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,rgba(255, 255, 109, 0.705), rgba(255, 92, 92, 0.746));
+}
+.formgroup button{
+    background-color: black;
+    width:50%;
+    margin: auto;
+    height: 5rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+/*UTILITY CLASSES*/
+html{
+    font-size: 10px;
+}
+
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.8rem;
+}
+
+input,option,select{
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+}
+
+
+
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

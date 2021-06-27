@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Amity University Survey Form</h1>
+    <p id="description"><em>Thank You for taking out time for us and filling the form</em></p>
+
+    <form action="noaction.php" id="survey-form">
+        <div class="formgroup">
+            <label for="name" id="name-label">Enter your Name:</label >
+            <input type="text" name="myName" id="name" placeholder="Name" required>
+        </div>
+
+        <div class="formgroup">
+            <label for="email" id="email-label">Enter your email:</label>
+            <input type="email" name="myEmail" id="email" required placeholder="Email">
+        </div>
+
+        <div class="formgroup">
+            <label for="number" id="number-label">Enter your number:</label>
+            <input type="number" name="myNumber" id="number" min="0000000000" max="9999999999" placeholder="Number">
+        </div>
+
+        <div class="formgroup">
+            <select name="role" id="dropdown">
+                <option disabled selected value>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Full Time Worker">Full Time Worker</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Job-Recruiter">Job-Recruiter</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <p>Would you recommend Amity University to a friend of yours?</p>
+
+            <label for="userfiller">Yeah, why not!</label>
+            <input type="radio" name="userfiller" value="Yeah, why not!">
+
+            <label for="userfiller">Maybe</label>
+            <input type="radio" name="userfiller" value="Maybe">
+
+            <label for="userfiller">No, never</label>
+            <input type="radio" name="userfiller" value="No, never">
+        </div>
+
+
+        <div class="formgroup">
+            <p>What is the thing you like about Amity University Noida, UP?</p>
+
+            <label>
+                <input type="checkbox" value="faculty" name="check2">
+                Faculty
+            </label>
+
+            <label>
+                <input type="checkbox" value=" Work Environment" name="check2">
+                Work Environment
+            </label>
+
+            <label>
+                <input type="checkbox" value="Infrastructure" name="check2">
+                Infrastructure
+            </label>
+
+            <label>
+                <input type="checkbox" value="Students" name="check2">
+                Students
+            </label>
+
+            <label>
+                <input type="checkbox" value="Technology used" name="check2">
+                Technology used
+            </label>
+
+            <label>
+                <input type="checkbox" value="Teaching method" name="check2">
+                Teaching method
+            </label>
+        </div>
+
+        <div class="formgroup">
+            <p>Any feedback/ suggestions ?</p>
+            <textarea name="mySuggestions" id="suggestions" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="formgroup">
+            <button id="submit" type="submit">Submit form!</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
